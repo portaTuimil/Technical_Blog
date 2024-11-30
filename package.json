@@ -1,0 +1,16 @@
+{
+  "homepage": "https://portatuimil.github.io/Technical_Blog/",
+  "name": "technical-blog",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  }
+}
