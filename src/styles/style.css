@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+  }
+
+:root{
+    --primary-color: #0a121c;
+    --secondary-color: #ffffff;
+    --terciary-color:#ffffff;
+    --text-color: #deddd0;
+    --text-secondary-color: #818181;
+    --sb-thumb-color: #232E33;
+    font-family: Roboto;
+    color-scheme: dark;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scrollbar-width: auto;
+    scrollbar-color: #232e33 #0a121c;
+    color: var(--text-color)
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+
+/* ---------- Navbar ---------- */ 
+.navbar{
+    height: 64px;
+    width: calc(100% - 12px);
+    margin: 6px 6px 0 6px;
+    padding: 0 6vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    user-select: none;
+}
+
+.navbar > h1{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
+    user-select: none;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+.nav-links li{
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: var(--secondary-color);
+}
+
+
+
+/* ---------- Mobile Menu ---------- */ 
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+      
+#menuToggle input{
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+      
+#menuToggle span{
+    display: flex;
+    width: 36px;
+    height: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+    background: var(--text-color);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+#lateralMenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+#lateralMenu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-secondary-color);
+    display: block;
+    transition: 0.3s;
+}
+  
+#lateralMenu a:hover{
+    color: #f1f1f1;
+}
+  
+#lateralMenu .closebtn{
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+main{
+    width: 100%;
+    padding: 120px 20% 0 20%;
+}
+
+h1{
+    color: var(--text-color);
+    font-size: 3rem;    
+}
+
+p{
+    color: var(--text-secondary-color);
+    margin: 15px 0 20px 20px;
+    font-size: 1.2rem;
+}
+
+.divider{
+    background: rgb(10,18,28);
+    background: linear-gradient(90deg, rgba(10,18,28,1) 0%, rgba(71,87,111,1) 50%, rgba(10,18,28,1) 100%);
+    filter: blur(0.4px);
+    height: 2px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: all 0.8s;
+}
