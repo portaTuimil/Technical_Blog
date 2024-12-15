@@ -66,3 +66,22 @@ const observer = new IntersectionObserver((entries)=>{
 
 const animationObjects = document.querySelectorAll(".animation");
 animationObjects.forEach((el)=>{observer.observe(el)});
+
+
+//Json Parser:
+const content = document.querySelector(".content");
+getJSON();
+function displayJSON(json){
+    for (let title in json) {
+        console.log(title)
+        let div = document.createElement("div");
+        div.classList.add("item");
+        content.appendChild(div)
+    }
+}
+
+async function getJSON() {
+    const response = await fetch('./src/data/hierarchy.json');
+    const json = await response.json();
+    displayJSON(json);
+};
