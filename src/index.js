@@ -119,7 +119,7 @@ function displayJSON(json){
 }
 
 async function getJSON() {
-    const response = await fetch('./src/data/hierarchy.json');
+    const response = await fetch('https://raw.githubusercontent.com/portaTuimil/Technical_Blog/refs/heads/master/src/data/hierarchy.json');
     const json = await response.json();
     displayJSON(json);
 };
