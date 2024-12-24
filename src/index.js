@@ -1,5 +1,6 @@
 import './styles/style.css'
 import './styles/animations.css'
+import './src/data/hierarchy.json'
 
 
 //Mobile Menu Interactions:
