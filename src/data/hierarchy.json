@@ -1,11 +1,27 @@
 {
-    "The Industrial Revolution, causes and consecuences.":{
-        "title": "testFirst"
-    },
-    "The most interesting title ever written in the history of server tests":{
-        "title": "testSecond"
-    },
-    "This titles are here to test how this works":{
-        "title": "testThird"
-    }
+    "articles": [
+        {
+        "The Industrial Revolution, causes and consecuences.": [
+            {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum molestie cursus. Proin tempus ex sed est porttitor, nec vestibulum odio ultrices. Nunc ultricies purus arcu, eget suscipit diam ullamcorper ac. Donec ullamcorper venenatis augue, sit amet aliquam dui dignissim eu. Curabitur vel arcu vel enim ultrices lacinia. Vestibulum ultrices lobortis semper.",
+            "spanish": true,
+            "english": true
+        }
+        ],
+        "The most interesting title ever written in the history of server tests": [
+            {
+            "description": "testSecond",
+            "spanish": true,
+            "english": false
+            }
+        ],
+        "This titles are here to test how this works": [
+            {
+            "description": "testThird",
+            "spanish": false,
+            "english": true
+            }
+        ]
+        }
+    ]
 }
