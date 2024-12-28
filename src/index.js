@@ -76,7 +76,8 @@ function displayJSON(json){
     let keys = Object.keys(json.articles["0"]);
     let values = Object.values(json.articles["0"]);
     for(let i = 0; i < Object.keys(json.articles["0"]).length; i++){
-        let div = document.createElement("div");
+        let div = document.createElement("a");
+        div.href = values[i][0].english;
         div.classList.add("item");
 
         let titleDiv = document.createElement("div");
@@ -119,7 +120,8 @@ function displayJSON(json){
 }
 
 async function getJSON() {
-    const response = await fetch('https://raw.githubusercontent.com/portaTuimil/Technical_Blog/refs/heads/master/src/data/hierarchy.json');
+    /*const response = await fetch('https://raw.githubusercontent.com/portaTuimil/Technical_Blog/refs/heads/master/src/data/hierarchy.json');*/
+    const response = await fetch('./src/data/hierarchy.json');
     const json = await response.json();
     displayJSON(json);
 };

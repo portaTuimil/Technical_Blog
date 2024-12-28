@@ -1,27 +1,10 @@
 {
-    "articles": [
-        {
-        "The Industrial Revolution, causes and consecuences.": [
+    "articles": [{
+        "On this blog and it's structure": [
             {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum molestie cursus. Proin tempus ex sed est porttitor, nec vestibulum odio ultrices. Nunc ultricies purus arcu, eget suscipit diam ullamcorper ac. Donec ullamcorper venenatis augue, sit amet aliquam dui dignissim eu. Curabitur vel arcu vel enim ultrices lacinia. Vestibulum ultrices lobortis semper.",
-            "spanish": true,
-            "english": true
-        }
-        ],
-        "The most interesting title ever written in the history of server tests": [
-            {
-            "description": "testSecond",
-            "spanish": true,
-            "english": false
-            }
-        ],
-        "This titles are here to test how this works": [
-            {
-            "description": "testThird",
-            "spanish": false,
-            "english": true
-            }
-        ]
-        }
-    ]
+            "description": "My blog is a complex machine that operates between three GitHub repose. Some features often atributed to the backend are brought to the frontend in order to operate this for free using only GitHub Pages.",
+            "spanish": null,
+            "english": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlog"
+        }]
+    }]
 }
