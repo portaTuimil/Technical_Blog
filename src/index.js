@@ -71,7 +71,7 @@ animationObjects.forEach((el)=>{observer.observe(el)});
 //Json Parser:
 const content = document.querySelector(".content");
 getJSON();
-function displayJSON(json){
+function displayJSON(json){     //displayJSON() parses the data and inyects it in the template
 
     let keys = Object.keys(json.articles["0"]);
     let values = Object.values(json.articles["0"]);
@@ -119,9 +119,9 @@ function displayJSON(json){
 
 }
 
-async function getJSON() {
-    /*const response = await fetch('https://raw.githubusercontent.com/portaTuimil/Technical_Blog/refs/heads/master/src/data/hierarchy.json');*/
-    const response = await fetch('./src/data/hierarchy.json');
+async function getJSON() {  //getJSON() retrieves the data
+    const response = await fetch('https://raw.githubusercontent.com/portaTuimil/Technical_Blog/refs/heads/master/src/data/hierarchy.json');
+    /*const response = await fetch('./src/data/hierarchy.json');*/
     const json = await response.json();
     displayJSON(json);
 };
