@@ -78,7 +78,7 @@ function displayJSON(json){     //displayJSON() parses the data and inyects it i
     for(let i = 0; i < Object.keys(json.articles["0"]).length; i++){
         let div = document.createElement("a");
         div.href = values[i][0].english;
-        div.classList.add("item");
+        div.classList.add("item", `${values[i][0].id}`);
 
         let titleDiv = document.createElement("div");
         titleDiv.classList.add("itemTitle");
