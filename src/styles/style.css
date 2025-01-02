@@ -10,6 +10,7 @@
     --text-color: #deddd0;
     --text-secondary-color: #818181;
     --sb-thumb-color: #232E33;
+    --standar-margin: 20%;
     font-family: Roboto;
     color-scheme: dark;
 }
@@ -40,7 +41,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 2;
     user-select: none;
@@ -142,7 +143,7 @@ li a{
 
 main{
     width: 100%;
-    padding: 120px 20% 0 20%;
+    padding: 40px var(--standar-margin) 0 var(--standar-margin);
 }
 
 h1{
@@ -173,7 +174,7 @@ p{
 /* ---------- Items ---------- */ 
 .content{
     width: 100%;
-    padding: 20%;
+    padding: var(--standar-margin);
     padding-top: 30px;
 }
 

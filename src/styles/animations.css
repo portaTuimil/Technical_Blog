@@ -1,3 +1,9 @@
 .show2{
     opacity: 1;
 }
+
+@media (max-width: 1000px) {
+    :root {
+        --standar-margin: 4%;
+      }
+}
