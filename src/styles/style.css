@@ -4,9 +4,13 @@
   }
 
 :root{
-    --primary-color: #0a121c;
-    --secondary-color: #ffffff;
-    --terciary-color:#ffffff;
+    --light-grey: #1e1e1e;
+    --dark-grey: #121212;
+    --link-blue:#6f87bf;
+    --dark-blue: #0b131e;
+    --light-beige: #deddd0;
+    --dark-beige: #818181;
+    --darker-beige: #282725;
     --text-color: #deddd0;
     --text-secondary-color: #818181;
     --sb-thumb-color: #232E33;
@@ -27,7 +31,7 @@
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: var(--dark-grey);
 }
 
 
@@ -50,14 +54,14 @@ body{
 .navbar > h1{
     font-size: 1.6rem;
     color: var(--text-color);
-    text-shadow: 1px 1px 2px var(--primary-color);
+    text-shadow: 1px 1px 2px var(--light-grey);
     user-select: none;
 }
 
 li a{
     text-decoration: none;
     color: var(--text-color);
-    text-shadow: 1px 1px 2px var(--primary-color);
+    text-shadow: 1px 1px 2px var(--light-grey);
 }
 
 .nav-links li{
@@ -144,6 +148,7 @@ li a{
 main{
     width: 100%;
     padding: 40px var(--standar-margin) 0 var(--standar-margin);
+
 }
 
 h1{
@@ -183,7 +188,7 @@ p{
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
-    background-color: #0c1623;
+    background-color: var(--light-grey);
     display: flex;
     gap: 20px;
     flex-direction: column;
