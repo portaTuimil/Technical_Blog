@@ -6,6 +6,13 @@
             "spanish": null,
             "english": "https://portatuimil.github.io/Blog_Generator/?t=onThisBlog",
             "id": "onThisBlog"
+        }],
+        "On what I did to my old computer:": [
+            {
+            "description": "Recently I tuned up an old computer. I installed linux on it and I explored different ways to control it remotely. In this post I talk about this process and how you cant do it too.",
+            "spanish": null,
+            "english": "https://portatuimil.github.io/Blog_Generator/?t=onWhatIDidToMyOldComputer",
+            "id": "onWhatIDidToMyOldComputer"
         }]
     }]
 }
