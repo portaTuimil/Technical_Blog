@@ -45,40 +45,21 @@ function menuActivation(){
     }
 }
 
-//Animations:
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if (entry.isIntersecting && entry.target.classList[0] == "introduction-wrapper"){
-            setTimeout(function(){
-                entry.target.classList.add("show1");
-            }, 150);
-        } else if (entry.isIntersecting && entry.target.classList[0] == "divider"){
-            setTimeout(function(){
-                entry.target.classList.add("show2");
-            }, 150);
-        } else if (entry.isIntersecting && entry.target.classList[0] == "aboutme"){
-            setTimeout(function(){
-                entry.target.classList.add("show3");
-            }, 150);
-        }
-    });
-});
-
-const animationObjects = document.querySelectorAll(".animation");
-animationObjects.forEach((el)=>{observer.observe(el)});
-
-
 //Json Parser:
 const content = document.querySelector(".content");
+let firstBool = true;
 getJSON();
 function displayJSON(json){     //displayJSON() parses the data and inyects it in the template
 
     let keys = Object.keys(json.articles["0"]);
     let values = Object.values(json.articles["0"]);
-    for(let i = 0; i < Object.keys(json.articles["0"]).length; i++){
+    for(let i = Object.keys(json.articles["0"]).length - 1; i >= 0; i--){
         let div = document.createElement("a");
         div.href = values[i][0].english;
         div.classList.add("item", `${values[i][0].id}`);
+        if (firstBool){
+            div.classList.add("lastPost")
+        }
 
         let titleDiv = document.createElement("div");
         titleDiv.classList.add("itemTitle");
