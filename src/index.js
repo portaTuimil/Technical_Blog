@@ -20,7 +20,7 @@ function mediaQuery(){
         queryState = 0;
 
     } else if (width >= 580 && queryState != 1){
-        nav.innerHTML = "<h1>Pablo Porta</h1> <ul class='nav-links'> <li><a href='https://portatuimil.github.io/Personal_Website/' id='home'>Home</a></li> <li><a href='https://github.com/portaTuimil'  target='_blank'>Contact</a></li>";
+        nav.innerHTML = "<h1>Pablo Porta</h1> <ul class='nav-links'> <li><a href='https://portatuimil.github.io/Personal_Website/' id='home'>Home</a></li> <li><a href='https://github.com/portaTuimil'  target='_blank'>Contact</a></li> ";
         queryState = 1;
     }
 };
