@@ -12,7 +12,7 @@ let queryState = 1000;
 let langList = ["es", "en"];
 
 langList.forEach((e)=>{document.querySelector(`.${e}`).addEventListener("click", ()=>{
-    window.location.replace(`http://localhost:5173/Technical_Blog/?l=${e}`);
+    window.location.replace(`${location.protocol + '//' + location.host + location.pathname}?l=${e}`);
 })})
 
 const urlParams = new URLSearchParams(window.location.search);
