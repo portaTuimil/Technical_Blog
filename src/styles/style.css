@@ -228,7 +228,7 @@ input[type="checkbox"]  {
    display: none;
 }
   
-input +.drop +  .options{
+input +.drop +  .languageWrapper{
     display:none;
 }
 
@@ -239,7 +239,7 @@ input +.drop +  .options{
     content:'▲';
 }
 
-input:checked + .drop + .options{
+input:checked + .drop + .languageWrapper{
     display: grid;
 }
 
@@ -249,4 +249,9 @@ input:checked + .drop + .options{
     padding-left: 60px;
     font-size: 18px;
     color: var(--text-secondary-color);
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
 }
