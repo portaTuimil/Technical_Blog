@@ -50,6 +50,16 @@
     color: var(--text-color)
 }
 
+.drop, a, button, input {
+    transition: transform 0.1s ease, background-color 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.drop:active, a:active, button:active {
+    transform: scale(0.97);   
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 body{
     background-color: var(--background-color);
 }
@@ -258,7 +268,9 @@ p{
 
 .drop {
     cursor: pointer;
-    display: block;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;  
 }
   
 input[type="checkbox"]  {
@@ -270,10 +282,14 @@ input +.drop +  .languageWrapper{
 }
 
 .drop:after {
-    content:'▼';
+    content:' ▼';
+    font-size: 16px;
+    margin-top: 5px;
 }
 :checked  + .drop:after {
     content:'▲';
+    font-size: 16px;
+        margin-top: 5px;
 }
 
 input:checked + .drop + .languageWrapper{
@@ -303,5 +319,5 @@ input:checked + .drop + .languageWrapper{
 }
 
 .languageToogler svg{
-    vertical-align: bottom;
+    vertical-align: top;
 }
