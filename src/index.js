@@ -1,6 +1,7 @@
 import './styles/style.css'
 
 const articleListUrl = 'https://raw.githubusercontent.com/portaTuimil/Blog_Generator/refs/heads/master/src/data/hierarchy.json';
+const blogGeneratorURL = 'https://portatuimil.github.io/Blog_Generator/'
 
 let languageToogler = document.querySelector(".languageToogler");
 let dropLanguageToogler = document.querySelector(".dropLanguageToogler");
@@ -52,7 +53,8 @@ function displayJSON(json){     //displayJSON() parses the data and inyects it i
                     filteredLang.push(lang);
                 }
             });
-            div.href = values[i][0]["link" + filteredLang[0]] || values[i][0]["link" + filteredLang[1]];
+
+            console.log(div.href)
 
             let titleDiv = document.createElement("h3");
             titleDiv.classList.add("itemTitle");
