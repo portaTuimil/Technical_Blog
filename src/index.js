@@ -54,7 +54,7 @@ function displayJSON(json){     //displayJSON() parses the data and inyects it i
                 }
             });
 
-            console.log(div.href)
+            div.href = blogGeneratorURL + "?t=" + keys[i] + filteredLang[0]; 
 
             let titleDiv = document.createElement("h3");
             titleDiv.classList.add("itemTitle");
